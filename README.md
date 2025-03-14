@@ -86,3 +86,97 @@
         <input type="submit">
     </form>
 ```
+
+### 03_
+- css 불러오는 방법 : 3가지
+
+- 1) <h1 style="color: red">hello</h1>
+- 2) <h2>world</h2>  head에서 스타일로 컬러 지정
+- 3) <h3>hi</h3> head에서 <link rel="stylesheet" href="mycss.css">  
+          
+
+- class="b" : 여러개의 값을 불러올 때 
+- id : id의 우선 순위가 더 높음.
+
+
+- ol > li.a {
+    font-size: 10pt;   # 지정해서 폰트 사이즈 정해줌.
+}
+
+#### 
+- copy selectors
+
+- div {
+    display: inline;  # inline은 자기가 가진 영역만큼만 데이터를 가짐 
+}                        
+-  <div>hello</div>     # div 블록 자체에 대한 데이터를 가짐 
+    <p>hello</p>                   
+
+
+
+#### 
+- contencs : 제일 안쪽
+- border : 테두리
+- padding : 컨텐츠와 테두리의 중간
+- margin : 액자와 액자 사이 공간 
+
+
+####
+```
+#pond {
+  display: flex; 
+
+justify-content:flex-end;    # 오른쪽 정렬
+justify-content:space-between; # 요소들을 동일한 간격을 둠.
+justify-content:space-around; # 요소들 주위에 동일한 간격
+}
+
+
+align-items: flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+align-items:flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+align-items:center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+align-items:baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+align-items:stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+```
+
+###
+- 메인축 : 왼 -> 오
+- 보조축 : 위 -> 아래
+
+row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
+column: 요소들을 위에서 아래로 정렬합니다.
+column-reverse: 요소들을 아래에서 위로 정렬합니다.
+
+order : 1 오른쪽정렬
+order : -1 왼쪽 정렬
+
+### 04_bootstrap.html
+
+#### 0. 
+- head 끝나기 전 : <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+- body 끝나기 전 : 자바 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+- 색깔 지정 : text-danger, text-warning, text-primary 등등 
+    - 배경 색 지정 : bg-primary
+- 명도 조절 : text-opacity-50
+- 테두리 설정 : border
+    - border-dark 
+    - border-3 
+    - rounded (모서리 둥글게) 
+
+- grid 크기 지정 : 모니터에 보여지는 
+xs
+<576px	sm
+≥576px	md
+≥768px	lg
+≥992px	xl
+≥1200px	xxl
+
+
+#### 99_practice
+- 부트 스트랩 불러오기 (download)
+- navbar : 상단 버튼 
+- card : 
